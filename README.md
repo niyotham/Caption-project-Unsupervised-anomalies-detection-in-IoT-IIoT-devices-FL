@@ -84,4 +84,25 @@ Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL|
 │   └── server.py
 └── train_128_autoencoder_final.csv
 ``` 
+## Flower framework
+Flower is a user-friendly framework designed for implementing the Federated Learning approach.
 
+### Installation
+Installing the Flower framework requires Python 3.6 or higher version.
+
+To install its stable version found on PyPI:
+
+``` 
+  pip install flwr
+```
+
+To install its latest (though unstable) releases:
+
+``` 
+pip install flwr-nightly 
+``` 
+To install its latest version from GitHub
+```
+pip install git+https://github.com/adap/flower.git 
+```
+### Requirements
