@@ -619,5 +619,5 @@ Other [examples](https://github.com/adap/flower/tree/main/examples):
 Give  a ⭐ if you like this project!
 
 
-
+![Contributors list](https://contrib.rocks/image?repo=niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL)
 
