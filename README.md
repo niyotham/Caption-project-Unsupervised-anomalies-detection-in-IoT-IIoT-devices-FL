@@ -106,3 +106,52 @@ To install its latest version from GitHub
 pip install git+https://github.com/adap/flower.git 
 ```
 ### Requirements
+```
+python3 -m pip install requirements.txt
+
+```
+
+## Federated learning pipeline
+A federated learning system needs two parts
+
+- ***Strong emphasized text*** Server. The server hosts the aggregation logic and makes sure all the devices have the latest and updated model parameters.
+- ***Strong emphasized text*** Client. The clients (devices or silos - hospitals in our specific use case) have a local model running on the local data.
+In our use case, we will be following the below steps.
+
+We will build a melanoma classifier based on EfficientNetB2 using ISIC 2020 Dataset.
+We will first train the model on the local data in each client. Lets start with 3 hospitals, so we have 3 locally running models in 3 seperate institutions.
+Once our model is trained and we have our model parameters, we try to connect with the server.
+The server then either accepts or rejects the invitation to connect based on some policy. Here we will simply use a First Come First Serve policy.
+If the connection goes through, the client sends the model parameters to the server.
+The server waits for all 3 model parameters and then aggregates them thus making use of all the data in all the models.
+This can happen for as many rounds as we want to train the data.
+Then the server sends the updates weight parameters back to the clients.
+The client will now use the weights for image classification.
+
+
+
+
+## Running the code
+
+Running the code has two distinct parts i.e. starting up the server and initiating the clients. Each of these steps are explained below.
+
+### Staring the Federated Server
+First thing we need to do is to run the Federated Server. This can be done by either directly running the ```server.py``` file (with appropriate arguments, all possible arguments are discusses in next section) located under the ```src``` folder using:
+
+``` 
+python server.py \
+    --server_address=$SERVER_ADDRESS \
+    --rounds=10 \
+    --sample_fraction=1.0 \
+    --min_num_clients=2
+```
+
+
+
+
+
+
+
+
+
+
