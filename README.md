@@ -133,9 +133,6 @@ In our use case, we will be following the below steps.
 ![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/FL%20true%202.png)
 
 
-
-
-
 ## Running the code
 
 Running the code has two distinct parts i.e. starting up the server and initiating the clients. Each of these steps are explained below.
@@ -522,7 +519,7 @@ Please, follow the following guide to learn how a SSL-enabled secure Flower serv
 
 [`Guide: SSL-enabled Server and Client`](https://flower.dev/docs/ssl-enabled-connections.html)
 
-## Skin Lesion Classification 
+## IOT Anomaly detection  
 
 ### Train the model in a federated setup
 
@@ -547,33 +544,6 @@ To train the model in a centralized way in case you want to make a comparison, y
 ```python train_local.py –-path_data <path> –-num_partitions <>  –-partition  <> –-gpu  <gpu ID>```
 
 Note: Use `--nowandb` flag if you want to disable wandb logging.
-
-
-## Synthetic data generation of skin lesions
-
-We trained StyleGAN2-ADA in a federated setup (using Flower), simulating 3 hospitals (clients) with limited data, in order to achieve a more diverse, realistic and fair dataset. 
-
-Our setup consists of 3 clients with different ISIC partitions based on patient ID (we made sure that data from one patient wasn’t distributed amongst different clients).
-The clients have different amount of data: 2k, 10k, 20k respectively (as above Exp 2.).
-
-For StylGAN2-ADA implementation we used:
-
-* Local Training in a centralized way: [NVlabs/stylegan2-ada-pytorch](https://github.com/aidotse/stylegan2-ada-pytorch)
-
-* Training in a federated setup: [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch)
-  1. Launch [`server_advanced_gan.py`](https://github.com/aidotse/decentralizedAI_dermatology/blob/master/server_advanced_gan.py):    
- ```python server_advanced_gan.py --data <> --r <Number of rounds for the federated training> --fc <Min fit clients, min number of clients to be sampled next round> --ac <Min available clients, min number of clients that need to connect to the server before training round can start>```
-  The model is evaluated in a decentralized manner. For some GANs parameters see the script.
-
-  2. Launch one [`client_isic_gan.py`](https://github.com/aidotse/decentralizedAI_dermatology/blob/master/client_isic_gan.py) per terminal:
-```python client_isic_gan.py –-data <path> –-num_partitions <>  –-partition  <> –gpu  <gpu ID>```
-
-Note: Use `--wandb` flag if you want to enable wandb logging.
-
-###  Requirements
-
-To use this FL GAN setup first clone [rosinality/stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch),
-and install all dependences required for it with additional requirements for `flower framework`.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -624,7 +594,29 @@ Other [examples](https://github.com/adap/flower/tree/main/examples):
 
 
 
+<!-- CONTACT -->
+## Contributors
+<a href = "https://github.com/kpi-maximisation/creative_optimization/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=kpi-maximisation/creative_optimization"/>
+</a>
 
+
+👤 **Niyomukiza Thamar**
+
+- GitHub: [Niyomukiza Thamar](https://github.com/)
+- LinkedIn: [Niyomukiza Thamar](https://www.linkedin.com/in/)
+
+
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [10 Academy](https://www.10academy.org/)  
+
+## Show US your support
+
+Give  a ⭐ if you like this project!
 
 
 
