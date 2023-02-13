@@ -4,7 +4,7 @@ This repository contains the code for the the caption project submitted to be ab
 
 
 
-![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/download.jpeg)
+![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/FLower%20fl.png)
 ## Introduction
 Harnessing the potential of AI in  industiries leveraging IoT and IIoT devices requires access to huge amounts of data produced by them to develop robust models. One of the  solutions to prevent the problems of sharing sensitive data of IoT DEVICES  is to build secure  models by using distributer machine learning such as  federated learning. In this scenario, different models are trained on each device's local data and share their knowledge (parameters) with a central server that performs the aggregation in order to achieve a more robust and fair model. Note that in this project we used two devices and compared their results with 
 
