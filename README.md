@@ -595,18 +595,12 @@ Other [examples](https://github.com/adap/flower/tree/main/examples):
 
 
 <!-- CONTACT -->
-## Contributors
-<a href = "https://github.com/kpi-maximisation/creative_optimization](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL)/graphs/contributors">
-  <img src = "https://avatars.githubusercontent.com/u/66441805?s=400&u=0045e7e04c4d5c606f055bdbd14db2b5de9a298f&v=4/">
-</a>
-
+## Contributor
 
 👤 **Niyomukiza Thamar**
 
 - GitHub: [Niyomukiza Thamar](https://github.com/)
 - LinkedIn: [Niyomukiza Thamar](https://www.linkedin.com/in/)
-
-
 
 
 
@@ -619,5 +613,4 @@ Other [examples](https://github.com/adap/flower/tree/main/examples):
 Give  a ⭐ if you like this project!
 
 
-![Contributors list](https://contrib.rocks/image?repo=niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL)
 
