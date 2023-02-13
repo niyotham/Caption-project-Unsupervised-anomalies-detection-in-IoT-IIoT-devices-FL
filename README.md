@@ -596,8 +596,8 @@ Other [examples](https://github.com/adap/flower/tree/main/examples):
 
 <!-- CONTACT -->
 ## Contributors
-<a href = "https://github.com/kpi-maximisation/creative_optimization/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=kpi-maximisation/creative_optimization"/>
+<a href = "https://github.com/kpi-maximisation/creative_optimization](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL)/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=kpi-maximisation/creative_optimization](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL)"/>
 </a>
 
 
