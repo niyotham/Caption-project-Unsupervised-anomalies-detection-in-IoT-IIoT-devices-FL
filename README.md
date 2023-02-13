@@ -114,19 +114,24 @@ python3 -m pip install requirements.txt
 ## Federated learning pipeline
 A federated learning system needs two parts
 
-- ***Strong emphasized text*** Server. The server hosts the aggregation logic and makes sure all the devices have the latest and updated model parameters.
-- ***Strong emphasized text*** Client. The clients (devices or silos - hospitals in our specific use case) have a local model running on the local data.
+1. ***Server*** Server. The server hosts the aggregation logic and makes sure all the devices have the latest and updated model parameters.
+2. ***Client*** Client. The clients (devices or silos - hospitals in our specific use case) have a local model running on the local data.
+
 In our use case, we will be following the below steps.
 
-We will build a melanoma classifier based on EfficientNetB2 using ISIC 2020 Dataset.
-We will first train the model on the local data in each client. Lets start with 3 hospitals, so we have 3 locally running models in 3 seperate institutions.
-Once our model is trained and we have our model parameters, we try to connect with the server.
-The server then either accepts or rejects the invitation to connect based on some policy. Here we will simply use a First Come First Serve policy.
-If the connection goes through, the client sends the model parameters to the server.
-The server waits for all 3 model parameters and then aggregates them thus making use of all the data in all the models.
-This can happen for as many rounds as we want to train the data.
-Then the server sends the updates weight parameters back to the clients.
-The client will now use the weights for image classification.
+1. We  build a IOT unsupervised anomaly detection based on ```auto-encoder``` using [Edge\_IIoTset](https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot) dataset from [kaggle].
+2. Then trained the model on the local data in each client device.  We have 2 locally running models ON 2 seperate DEVICES.
+3. Once our model is trained and our model parameters are ready, we try to connect with the server.
+4. The server then either accepts or rejects the invitation to connect based on some policy. It is simply  a First Come First Serve policy.
+5. If the connection goes through, the client sends the model parameters to the server.
+6. The server waits for all 2 model parameters and then aggregates them thus making use of all the data in all the models.
+7. This can happen for as many rounds as we want to train the data.
+8. Then the server sends the updates weight parameters back to the clients.
+9. The client will now use the weights for image classification.
+10. The client will now use the weights for anomaly detection.
+
+(https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/FL%20true%202.png)
+
 
 
 
