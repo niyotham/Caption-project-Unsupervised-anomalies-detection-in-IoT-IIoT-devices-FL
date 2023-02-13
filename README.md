@@ -11,7 +11,7 @@ Harnessing the potential of AI in  industiries leveraging IoT and IIoT devices r
 This repository contains the code for the implementation of detecting anomalies in IIoT devices network without accessing the data. In this example repository we are working on publicly available data [Edge\_IIoTset](https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot) on [kaggle](https://www.kaggle.com/), simulating the decentralised setup internally and compare with centralized ML. We have two different tasks on which we are actively working :
 
 
-## FILE STRUCTURE
+## File structure
 
 ``` 
 Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL|
