@@ -1,0 +1,4 @@
+outs:
+- md5: f205a7d4680c5947ba4786149e97b049
+  size: 320115148
+  path: DNN-EdgeIIoT_train_normal.csv
