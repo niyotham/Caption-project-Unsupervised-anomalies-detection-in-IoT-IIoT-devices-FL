@@ -130,7 +130,7 @@ In our use case, we will be following the below steps.
 9. The client will now use the weights for image classification.
 10. The client will now use the weights for anomaly detection.
 
-(https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/FL%20true%202.png)
+![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/FL%20true%202.png)
 
 
 
