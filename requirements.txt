@@ -1,0 +1,7 @@
+numpy==1.23.3
+flwr==0.18.0
+dvc==2.30.0
+pytorch==1.13.1
+pandas==1.5.0
+matplotlib==3.6.3
+sklearn==1.2
