@@ -553,7 +553,7 @@ Note: Use `--nowandb` flag if you want to disable wandb logging.
 
 Please, refer to the original Flower Repository for more documentation and tutorials [Flower Original GitHub repository](https://github.com/adap/flower)
 
-#### Documentation
+#### Documentation to read
 
 [Flower Docs](https://flower.dev/docs):
 * [Installation](https://flower.dev/docs/installation.html)
@@ -610,7 +610,7 @@ Other [examples](https://github.com/adap/flower/tree/main/examples):
 
 ## Show US your support
 
-Give  a ⭐ if you like this project!
+Give  a ⭐ if you like this project! 
 
 
 
