@@ -525,13 +525,13 @@ Please, follow the following guide to learn how a SSL-enabled secure Flower serv
 
 With both client and server ready, we can now run everything and see federated learning in action. FL systems usually have a server and multiple clients. We therefore have to start the server first:
 
-[`server_advanced.py`](https://github.com/aidotse/decentralizedAI_dermatology/blob/master/server_advanced.py):    
+[`server.py`]([https://github.com/aidotse/decentralizedAI_dermatology/blob/master/server_advanced.py](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/server.py)):    
  ```python server_advanced.py --path_data <> --r <Number of rounds for the federated training> --fc <Min fit clients, min number of clients to be sampled next round> --ac <Min available clients, min number of clients that need to connect to the server before training round can start>```
   The model is evaluated both centralized and in a decentralized manner. If you don’t want to perform centralized evaluation set `fraction_eval=0.0`.
 
 Once the server is running we can start the clients in different terminals. Open a new terminal per client and start the client:
 
-[`client_isic.py`](https://github.com/aidotse/decentralizedAI_dermatology/blob/master/client_isic.py) per terminal:
+[`client.py`](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/client.py) per terminal:
 ```python client_isic.py –-path <path> –-num_partitions <>  –-partition  <> –-gpu  <gpu ID>```
 
 Note: Use `--nowandb` flag if you want to disable wandb logging.
