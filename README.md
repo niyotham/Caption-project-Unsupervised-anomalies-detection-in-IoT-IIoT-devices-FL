@@ -525,7 +525,7 @@ Please, follow the following guide to learn how a SSL-enabled secure Flower serv
 
 With both client and server ready, we can now run everything and see federated learning in action. FL systems usually have a server and multiple clients. We therefore have to start the server first:
 
-[`server.py`]([https://github.com/aidotse/decentralizedAI_dermatology/blob/master/server_advanced.py](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/server.py)):    
+[`server.py`](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/server.py):    
  ```python server_advanced.py --path_data <> --r <Number of rounds for the federated training> --fc <Min fit clients, min number of clients to be sampled next round> --ac <Min available clients, min number of clients that need to connect to the server before training round can start>```
   The model is evaluated both centralized and in a decentralized manner. If you don’t want to perform centralized evaluation set `fraction_eval=0.0`.
 
