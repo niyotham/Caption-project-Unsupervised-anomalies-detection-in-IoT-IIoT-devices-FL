@@ -574,7 +574,8 @@ Comparison of testing results of the ML and Vanilla FL(FedAvg)
 
 ![](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/Table%20comoarison.png)
 
-* As it can be seen from the  gure, the accuracy for the federatedapproach for all experiments came at 99.8% where the average accuracy of the non-FL baseline reached 99.7%. Looking at the testing results, the di erence seems marginal for the simulation, and the number of false positive rates is better for synchronous FL with 0.16%. 
+* As it can be seen from the below figureble and ta, the accuracy for the federatedapproach for all experiments came at 99.8% where the average accuracy of the non-FL baseline reached 99.7%. 
+* Looking at the testing results, the difference seems marginal for the simulation, and the number of false positive rates is better for synchronous FL with 0.16%. 
 * The potential of the federated-based approach could be the effect of training on decentralized data generated from various devices. It remains to be seen if the non-synchronous FL approach, which is our next activity, will also produce better results.
 
 
