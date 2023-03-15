@@ -562,9 +562,9 @@ python flower_utils.py
 > Testing results for both centralized and decentralized approaches were computed with the help of MSE reconstruction loss and the threshold of the training phase.
 
 ![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_deoising_AE_128n_16b_Tahn_Dropout(0.2).png)
-![Alter text-1](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device0.png "Device0 =20%x") ![Alter text-2](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device1.png "Device1 =20%x")
 
-Solarized dark             |  Solarized Ocean
+
+Device ID 0            |  Device ID 1 
 :-------------------------:|:-------------------------:
 ![](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device0.png)  |  ![](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device1.png)
 
