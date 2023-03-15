@@ -525,25 +525,41 @@ Please, follow the following guide to learn how a SSL-enabled secure Flower serv
 
 With both client and server ready, we can now run everything and see federated learning in action. FL systems usually have a server and multiple clients. We therefore have to start the server first:
 
-[`server.py`](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/server.py):    
- ```python server_advanced.py --path_data <> --r <Number of rounds for the federated training> --fc <Min fit clients, min number of clients to be sampled next round> --ac <Min available clients, min number of clients that need to connect to the server before training round can start>```
-  The model is evaluated both centralized and in a decentralized manner. If you don’t want to perform centralized evaluation set `fraction_eval=0.0`.
+[`server.py`](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/server.py):  
+
+ ```
+python server.py \
+    --server_address=$SERVER_ADDRESS \
+    --rounds=10 \
+    --sample_fraction=1.0 \
+    --min_num_clients=2
+ 
+ ```
+  We performed The model evaluation of both centralized and in a decentralized models. 
 
 Once the server is running we can start the clients in different terminals. Open a new terminal per client and start the client:
 
 [`client.py`](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/client.py) per terminal:
-```python client_isic.py –-path <path> –-num_partitions <>  –-partition  <> –-gpu  <gpu ID>```
+```
+client.py --cid <the client ID number>
 
-Note: Use `--nowandb` flag if you want to disable wandb logging.
+```
+
+
 
 ### Local centralized training
 
 To train the model in a centralized way in case you want to make a comparison, you can run: 
 
-[`train_local.py`](https://github.com/aidotse/decentralizedAI_dermatology/blob/master/train_local.py)  
-```python train_local.py –-path_data <path> –-num_partitions <>  –-partition  <> –-gpu  <gpu ID>```
+[`flower_utils.py`](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/src/flower_utils.py)  
+```
+python flower_utils.py 
 
-Note: Use `--nowandb` flag if you want to disable wandb logging.
+```
+
+### Results
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
