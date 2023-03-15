@@ -559,7 +559,16 @@ python flower_utils.py
 
 ### Results
 
+> Testing results for both centralized and decentralized approaches were computed with the help of MSE reconstruction loss and the threshold of the training phase.
 
+![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_deoising_AE_128n_16b_Tahn_Dropout(0.2).png)
+![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device0.png)
+![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device1.png)
+
+
+> Centralized deep auto encoder vs  FedAvg deep auto encoder  performance comparizon. 
+![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/overall_metrics.png)
+![Alter text]()
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
