@@ -564,7 +564,9 @@ python flower_utils.py
 ![Alter text](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_deoising_AE_128n_16b_Tahn_Dropout(0.2).png)
 ![Alter text-1](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device0.png "Device0 =20%x") ![Alter text-2](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device1.png "Device1 =20%x")
 
-
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device0.png)  |  ![](https://github.com/niyotham/Caption-project-Unsupervised-anomalies-detection-in-IoT-IIoT-devices-FL/blob/main/images/train_device1.png)
 
 > Centralized deep auto encoder vs  FedAvg deep auto encoder  performance comparizon. 
 
